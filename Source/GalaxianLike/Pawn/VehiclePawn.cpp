@@ -3,7 +3,7 @@
 
 #include "VehiclePawn.h"
 #include "BaseProjectile.h"
-#include "GameFramework/FloatingPawnMovement.h"
+#include "GalaxianPawnMovement.h"
 #include "ArmorComponent.h"
 #include "Engine/World.h"
 #include "TimerManager.h"
@@ -12,7 +12,7 @@ AVehiclePawn::AVehiclePawn()
 {
 	PrimaryActorTick.bCanEverTick = true;
 
-    MovementComponent = CreateDefaultSubobject<UFloatingPawnMovement>(TEXT("MovementComponent"));
+    MovementComponent = CreateDefaultSubobject<UGalaxianPawnMovement>(TEXT("MovementComponent"));
 
     ArmorComponent = CreateDefaultSubobject<UArmorComponent>(TEXT("ArmorComponent"));
 

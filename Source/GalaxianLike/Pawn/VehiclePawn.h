@@ -6,7 +6,7 @@
 #include "GameFramework/Pawn.h"
 #include "VehiclePawn.generated.h"
 
-class UFloatingPawnMovement;
+class UGalaxianPawnMovement;
 class UArmorComponent;
 class ABaseProjectile;
 
@@ -17,9 +17,9 @@ class GALAXIANLIKE_API AVehiclePawn : public APawn
 
 protected:
     UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = "Movement")
-    UFloatingPawnMovement* MovementComponent;
+    UGalaxianPawnMovement* MovementComponent;
 
-    UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = "Movement")
+    UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = "Armor")
     UArmorComponent* ArmorComponent;
 
     UPROPERTY(EditDefaultsOnly, Category = "Shooting")
